@@ -11,7 +11,6 @@ intents = discord.Intents.default()
 intents.message_content = True
 client = discord.Client(intents=intents)
 
-
 '''
 Events
 '''
@@ -31,7 +30,7 @@ async def on_message(msg):
     # Run function depending on command
     if msg.content.startswith("val help"):
         await help_command(msg)
-    if msg.content.startswith("val stats"):
+    elif msg.content.startswith("val stats"):
         await stats_command(msg)
     else:
         await unknown_command(msg)
