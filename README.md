@@ -8,7 +8,9 @@ Use the prefix `val` to access the commands this bot offers.
 ### Commands
 
 `val help` Lists all the possible commands
+
 `val help <command>` Explains how to use a specific command
+
 `val stats <username#tagline>` View the stats of a specific user
 
 ## Notes
